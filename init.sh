@@ -19,16 +19,16 @@ wp option update time_format 'H:i'
 wp rewrite structure '/%postname%/'
 
 # サンプルの投稿、固定ページを削除
-wp post delete 1 2 3 --force
+# wp post delete 1 2 3 --force
 
 # サンプルのコメントを削除
-wp comment delete 1 --force
+# wp comment delete 1 --force
 
 # カテゴリー名を日本語に変更
 wp term update category 1 --name='未分類'
 
 # デバッグモードをtrueにする
-wp config set WP_DEBUG true --raw
+# wp config set WP_DEBUG true --raw
 
 # テーマを全削除
 wp theme delete --all
